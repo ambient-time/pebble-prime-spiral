@@ -1,0 +1,66 @@
+<!doctype html>
+<!--
+  Quick Take: A monochrome prime-number sunflower clock: three smooth time bearings illuminate aligned primes.
+  Stack: Self-contained; no external libraries.
+  Source: https://datapoems.io/clocks/prime-spiral/
+  License: MIT
+  Author: Luke Steuber
+-->
+<html class="collection-export embed" lang="en">
+<head>
+<script>window.CLOCK_COLLECTION_EXPORT=true;</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Prime Spiral</title>
+<meta name="description" content="A monochrome prime-number sunflower clock: three smooth time bearings illuminate aligned primes.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--bg:#020407;--ink:#f4f7f8;--accent:#fff;--font:"DM Mono",monospace}*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:var(--bg)}body{font-family:var(--font);color:var(--ink)}canvas{position:fixed;inset:0;width:100%;height:100%;display:block}.readout{position:fixed;left:max(14px,env(safe-area-inset-left));bottom:max(31px,calc(env(safe-area-inset-bottom) + 22px));pointer-events:none;font:500 clamp(.95rem,2.15vw,1.55rem)/1 var(--font);letter-spacing:.02em;color:color-mix(in srgb,var(--ink) 88%,transparent);text-shadow:0 0 15px color-mix(in srgb,var(--accent) 38%,transparent)}.caption{position:fixed;left:max(14px,env(safe-area-inset-left));bottom:max(13px,env(safe-area-inset-bottom));font:500 9px/1.4 var(--font);letter-spacing:.16em;text-transform:uppercase;color:color-mix(in srgb,var(--ink) 62%,transparent);pointer-events:none}.help{position:fixed;top:max(8px,env(safe-area-inset-top));right:max(8px,env(safe-area-inset-right));z-index:2;display:grid;place-items:center;width:44px;height:44px;color:color-mix(in srgb,var(--ink) 72%,transparent);text-decoration:none;font:500 17px/1 var(--font)}.help:hover,.help:focus-visible{color:var(--accent)}.help:focus-visible{outline:2px solid currentColor;outline-offset:-5px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+html.compact .caption,html.compact .help{display:none}html.compact .readout{left:50%;top:50%;bottom:auto;transform:translate(-50%,-50%);width:52px;aspect-ratio:1;display:grid;place-items:center;border-radius:50%;background:var(--bg);border:1px solid color-mix(in srgb,var(--accent) 24%,transparent);box-shadow:0 0 0 3px color-mix(in srgb,var(--bg) 76%,transparent);font-size:9px;text-shadow:none}
+</style>
+<style data-collection-chrome>
+.dev-controls,
+.study-controls,
+.help,
+.back,
+.about-backdrop,
+.about-modal,
+.about-card,
+.gate-controls,
+a[aria-label*='about' i],
+button[aria-label*='about' i],
+a[aria-label*='help' i],
+button[aria-label*='help' i],
+a[aria-label*='all clocks' i],
+button[aria-label*='all clocks' i],
+a[aria-label*='clock gallery' i],
+button[aria-label*='clock gallery' i]{display:none!important}
+</style>
+</head>
+<body class="collection-export embed">
+<canvas id="field" role="img" aria-label="A monochrome sunflower spiral of prime numbers. Prime dots brighten near three smoothly rotating local-time bearings: hours reach the inner field, minutes reach farther, and seconds reach the edge."></canvas>
+<div class="readout" id="readout" aria-hidden="true">--:--</div><div class="caption" aria-hidden="true">prime field · monochrome</div>
+<a class="help" href="https://lukesteuber.com" aria-label="About Prime Spiral">?</a><div id="sr" class="sr-only" aria-live="polite">Loading local time.</div>
+<script>
+(()=>{"use strict";
+const c=document.querySelector("#field"),g=c.getContext("2d"),readout=document.querySelector("#readout"),sr=document.querySelector("#sr"),motion=matchMedia("(prefers-reduced-motion: reduce)"),TAU=Math.PI*2,N=1800,GOLDEN=Math.PI*(3-Math.sqrt(5)),theme={bg:"#020407",ink:"#f4f7f8",signal:"#ffffff"};
+const prime=new Uint8Array(N+1);prime.fill(1,2);for(let p=2;p*p<=N;p++)if(prime[p])for(let k=p*p;k<=N;k+=p)prime[k]=0;
+const dots=[];for(let i=2;i<=N;i++){const r=Math.sqrt(i/N),a=i*GOLDEN-Math.PI/2;dots.push({r,a,prime:!!prime[i]})}
+let W=0,H=0,dpr=1,raf=0,timer=0,lastMinute="";
+function rgb(hex){const n=parseInt(hex.slice(1),16);return[(n>>16)&255,(n>>8)&255,n&255]}
+function resize(){dpr=Math.min(devicePixelRatio||1,2);W=innerWidth;H=innerHeight;c.width=Math.round(W*dpr);c.height=Math.round(H*dpr);g.setTransform(dpr,0,0,dpr,0,0);const short=Math.min(W,H),aspect=Math.max(W,H)/Math.max(1,short);document.documentElement.classList.toggle("compact",short<=260&&aspect<=1.3)}
+function angleDistance(a,b){let d=Math.abs((a-b)%TAU);return d>Math.PI?TAU-d:d}
+function hexAlpha(hex,a){const [r,gg,b]=rgb(hex);return`rgba(${r},${gg},${b},${a})`}
+function draw(now){const t=theme,h=now.getHours(),m=now.getMinutes(),s=now.getSeconds()+(motion.matches?0:now.getMilliseconds()/1000),minute=m+s/60,hour=(h%12)+minute/60,angles=[hour/12*TAU-Math.PI/2,minute/60*TAU-Math.PI/2,s/60*TAU-Math.PI/2];g.fillStyle=t.bg;g.fillRect(0,0,W,H);const cx=W/2,cy=H/2,R=Math.min(W,H)*.435;
+const wash=g.createRadialGradient(cx,cy,0,cx,cy,R*1.2);wash.addColorStop(0,hexAlpha(t.signal,.04));wash.addColorStop(1,hexAlpha(t.signal,0));g.fillStyle=wash;g.fillRect(0,0,W,H);
+for(const d of dots){const x=cx+Math.cos(d.a)*d.r*R,y=cy+Math.sin(d.a)*d.r*R;let v=0,hit=-1;for(let j=0;j<3;j++){const depth=j===0?.58:j===1?.8:1;const q=Math.exp(-Math.pow(angleDistance(d.a,angles[j]),2)/(j===2?.0015:.006));if(d.r<depth&&q>v){v=q;hit=j}}if(d.prime){const active=hit>=0&&v>.04,base=R<120?1.35:R<220?1.7:2.05,radius=base+v*(R<120?3:4.6);g.fillStyle=hexAlpha(active?t.signal:t.ink,.68+v*.32);if(active&&v>.16){g.shadowColor=t.signal;g.shadowBlur=radius*4}g.beginPath();g.arc(x,y,radius,0,TAU);g.fill();g.shadowBlur=0}else if(hit>=0&&v>.32){const z=R<120?.9:1.15;g.fillStyle=hexAlpha(t.signal,.1+v*.08);g.beginPath();g.arc(x,y,z,0,TAU);g.fill()}}
+g.fillStyle=hexAlpha(t.signal,.98);g.shadowColor=t.signal;g.shadowBlur=Math.max(10,R*.028);g.beginPath();g.arc(cx,cy,Math.max(4.5,R*.024),0,TAU);g.fill();g.shadowBlur=0;readout.textContent=String(h).padStart(2,"0")+":"+String(m).padStart(2,"0");const mk=h+":"+m;if(mk!==lastMinute){lastMinute=mk;sr.textContent="Prime Spiral. Local time "+now.toLocaleTimeString([],{hour:"numeric",minute:"2-digit"})+"."}}
+function frame(){draw(new Date());raf=requestAnimationFrame(frame)}function tick(){draw(new Date())}function start(){if(raf||timer)return;if(motion.matches){tick();timer=setInterval(tick,1000)}else raf=requestAnimationFrame(frame)}function stop(){if(raf){cancelAnimationFrame(raf);raf=0}if(timer){clearInterval(timer);timer=0}}
+addEventListener("resize",()=>{resize();if(motion.matches)draw(new Date())});document.addEventListener("visibilitychange",()=>document.hidden?stop():start());motion.addEventListener?.("change",()=>{stop();start()});resize();start();
+})();
+
+</script>
+
+
+</body></html>

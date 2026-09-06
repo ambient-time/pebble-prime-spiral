@@ -1,0 +1,39 @@
+{
+  "name": "prime-spiral",
+  "author": "Luke Steuber",
+  "version": "1.0.0",
+  "private": true,
+  "keywords": [
+    "pebble-app"
+  ],
+  "dependencies": {},
+  "pebble": {
+    "displayName": "Prime Spiral",
+    "companyName": "Luke Steuber",
+    "uuid": "3b314f24-6f15-4790-b841-d1767a0c8663",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "basalt",
+      "chalk",
+      "diorite",
+      "emery",
+      "flint",
+      "gabbro"
+    ],
+    "watchapp": {
+      "watchface": true
+    },
+    "messageKeys": [],
+    "resources": {
+      "media": [
+        {
+          "type": "bitmap",
+          "name": "MENU_ICON",
+          "file": "menu-icon.png",
+          "menuIcon": true
+        }
+      ]
+    }
+  }
+}

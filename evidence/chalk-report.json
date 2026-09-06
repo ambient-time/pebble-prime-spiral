@@ -1,0 +1,70 @@
+{
+  "platform": "chalk",
+  "pbwSHA256": "dd975f8a1b464fc42580f915e1cd67524f2594542f45f7bf30926fdb90d8b82a",
+  "capturedAt": "2026-09-06T06:59:56.583598+00:00",
+  "secondsChanged": true,
+  "naturalNoonRollover": true,
+  "naturalMidnightRollover": true,
+  "cadenceFrames": {
+    "idle": [
+      19,
+      20,
+      21
+    ],
+    "tap": [
+      23,
+      31,
+      39
+    ],
+    "settled": [
+      74,
+      75,
+      76
+    ]
+  },
+  "frames": [
+    "evidence/chalk-hero.png",
+    "evidence/chalk-later.png",
+    "evidence/chalk-noon.png",
+    "evidence/chalk-quarter.png",
+    "evidence/chalk-evening.png",
+    "evidence/chalk-before-noon.png",
+    "evidence/chalk-noon-rollover.png",
+    "evidence/chalk-before-midnight.png",
+    "evidence/chalk-midnight-rollover.png",
+    "evidence/chalk-cadence.png"
+  ],
+  "logs": [
+    "Prime time=23:59:25.574 active=11 ms=43 heap=46412 frames=1",
+    "Prime time=23:59:26.914 active=13 ms=35 heap=46492 frames=4",
+    "Prime time=23:21:17.281 active=15 ms=43 heap=46492 frames=5",
+    "Prime time=23:21:18.890 active=13 ms=39 heap=46492 frames=7",
+    "Prime time=12:00:00.304 active=12 ms=31 heap=46492 frames=8",
+    "Prime time=03:15:45.132 active=13 ms=39 heap=46492 frames=9",
+    "Prime time=18:30:30.144 active=14 ms=35 heap=46492 frames=10",
+    "Prime time=11:59:58.117 active=13 ms=35 heap=46492 frames=11",
+    "Prime time=11:59:59.117 active=10 ms=35 heap=46492 frames=12",
+    "Prime time=12:00:00.113 active=12 ms=35 heap=46492 frames=13",
+    "Prime time=23:59:58.378 active=13 ms=36 heap=46492 frames=14",
+    "Prime time=23:59:59.378 active=10 ms=36 heap=46492 frames=15",
+    "Prime time=00:00:00.382 active=12 ms=32 heap=46492 frames=16",
+    "Prime time=11:24:30.417 active=16 ms=40 heap=46492 frames=17",
+    "Prime time=11:24:31.421 active=13 ms=36 heap=46492 frames=18",
+    "Prime time=11:24:32.417 active=16 ms=40 heap=46492 frames=19",
+    "Prime time=11:24:33.421 active=13 ms=36 heap=46492 frames=20",
+    "Prime time=11:24:34.421 active=15 ms=36 heap=46492 frames=21",
+    "Prime time=11:24:35.031 active=17 ms=39 heap=46492 frames=23",
+    "Prime time=11:24:36.039 active=16 ms=35 heap=46492 frames=31",
+    "Prime time=11:24:37.039 active=11 ms=35 heap=46492 frames=39",
+    "Prime time=11:24:38.054 active=16 ms=35 heap=46492 frames=47",
+    "Prime time=11:24:39.062 active=17 ms=39 heap=46492 frames=55",
+    "Prime time=11:24:40.070 active=17 ms=39 heap=46492 frames=63",
+    "Prime time=11:24:41.421 active=17 ms=39 heap=46492 frames=71",
+    "Prime time=11:24:42.417 active=15 ms=40 heap=46492 frames=72",
+    "Prime time=11:24:43.417 active=15 ms=40 heap=46492 frames=73",
+    "Prime time=11:24:44.417 active=14 ms=40 heap=46492 frames=74",
+    "Prime time=11:24:45.421 active=15 ms=36 heap=46492 frames=75",
+    "Prime time=11:24:46.417 active=15 ms=40 heap=46492 frames=76"
+  ],
+  "limits": "Isolated emulator. Frames require visual inspection; not physical-device power/readability evidence."
+}

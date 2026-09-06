@@ -1,0 +1,20 @@
+{
+  "pbwSHA256": "dd975f8a1b464fc42580f915e1cd67524f2594542f45f7bf30926fdb90d8b82a",
+  "platforms": [
+    "basalt",
+    "chalk",
+    "diorite",
+    "emery",
+    "flint",
+    "gabbro"
+  ],
+  "captureNames": [
+    "hero",
+    "quarter",
+    "evening",
+    "noon-rollover",
+    "midnight-rollover"
+  ],
+  "result": "Inspected native captures: circular prime field, distinct moving bright clusters, clear center readout, correct noon and midnight.",
+  "limits": "Emulator captures; physical readability and battery life untested."
+}
