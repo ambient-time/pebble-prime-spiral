@@ -3,7 +3,6 @@
 #include <assert.h>
 #include <math.h>
 #include <stdio.h>
-#include <string.h>
 static int is_prime(int n){for(int p=2;p*p<=n;p++)if(n%p==0)return 0;return n>=2;}
 int main(void){
   int primes=0;float maximum=0;
@@ -24,14 +23,13 @@ int main(void){
       float error=fabs(prime_intensity(dot,t)/255.0-expected);if(error>maximum)maximum=error;assert(error<.008);
     }
   }
-  assert(primes==278);char value[6];
+  assert(primes==278);
   for(int s=0;s<86400;s++){
     int h=s/3600,m=s/60%60;PrimeTime t=prime_time(h,m,s%60,0);
     assert(t.angle[0]==(uint16_t)(((int64_t)s*1000%43200000)*65536/43200000));
-    prime_readout(value,h,m);int hh,mm;assert(sscanf(value,"%d:%d",&hh,&mm)==2&&hh==h&&mm==m);
   }
   PrimeTime end=prime_time(23,59,59,999),start=prime_time(0,0,0,0),noon=prime_time(12,0,0,0);
   assert(end.angle[0]>65530&&end.angle[1]>65530&&end.angle[2]>65530);
   assert(start.angle[0]==0&&start.angle[1]==0&&start.angle[2]==0&&noon.angle[0]==0);
-  printf("PASS: %d exact primes through 1800, 1799 golden-angle points, depth limits, Gaussian maximum error %.5f, 86400 local-second readouts, noon and midnight.\n",primes,maximum);
+  printf("PASS: %d exact primes through 1800, 1799 golden-angle points, depth limits, Gaussian maximum error %.5f, 86400 local-second bearings, noon and midnight.\n",primes,maximum);
 }

@@ -1,7 +1,6 @@
 // Copyright 2026 Luke Steuber. MIT License.
 #include <pebble.h>
 #include "prime.h"
-#include "digits.h"
 static Window *s_window;
 static Layer *s_layer;
 static bool s_focused;
@@ -43,13 +42,6 @@ static void draw(Layer *layer,GContext *ctx){
 #endif
     }
   }
-  // The source supplies this compact center readout for small displays.
-  int panel=w>=240?32:w>=180?28:25;
-  disc(ctx,center,panel+2,GColorBlack);
-  graphics_context_set_stroke_color(ctx,PBL_IF_COLOR_ELSE(GColorDarkGray,GColorWhite));
-  graphics_context_set_stroke_width(ctx,1);graphics_draw_circle(ctx,center,panel);
-  char text[6];prime_readout(text,local.tm_hour,local.tm_min);
-  draw_digits(ctx,text,center.x,center.y,w>=240?2:1,GColorWhite);
   s_frames++;
   if(s_last_second!=local.tm_sec){
     uint16_t end;time_ms(NULL,&end);

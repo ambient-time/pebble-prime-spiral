@@ -1,68 +1,14 @@
 {
-  "version": "1.0.0",
-  "pbwSHA256": "dd975f8a1b464fc42580f915e1cd67524f2594542f45f7bf30926fdb90d8b82a",
+  "version": "1.0.1",
+  "pbwSHA256": "f27fbb2bb3ecae949963a4e1b1db55610d2007450fffc993a2cd09789f5465c7",
   "platforms": {
     "basalt": {
-      "capturedAt": "2026-09-06T07:04:34.739603+00:00",
+      "capturedAt": "2026-09-07T06:01:51.763253+00:00",
       "loggedRenderMS": {
-        "min": 35,
-        "max": 43
+        "min": 15,
+        "max": 27
       },
-      "minimumLoggedFreeHeapBytes": 46412,
-      "naturalNoonRollover": true,
-      "naturalMidnightRollover": true,
-      "cadenceFrames": {
-        "idle": [
-          19,
-          20,
-          21
-        ],
-        "tap": [
-          23,
-          31,
-          39
-        ],
-        "settled": [
-          74,
-          75,
-          76
-        ]
-      }
-    },
-    "chalk": {
-      "capturedAt": "2026-09-06T06:59:56.583598+00:00",
-      "loggedRenderMS": {
-        "min": 31,
-        "max": 43
-      },
-      "minimumLoggedFreeHeapBytes": 46412,
-      "naturalNoonRollover": true,
-      "naturalMidnightRollover": true,
-      "cadenceFrames": {
-        "idle": [
-          19,
-          20,
-          21
-        ],
-        "tap": [
-          23,
-          31,
-          39
-        ],
-        "settled": [
-          74,
-          75,
-          76
-        ]
-      }
-    },
-    "diorite": {
-      "capturedAt": "2026-09-06T07:00:40.337521+00:00",
-      "loggedRenderMS": {
-        "min": 0,
-        "max": 4
-      },
-      "minimumLoggedFreeHeapBytes": 46476,
+      "minimumLoggedFreeHeapBytes": 47164,
       "naturalNoonRollover": true,
       "naturalMidnightRollover": true,
       "cadenceFrames": {
@@ -83,40 +29,67 @@
         ]
       }
     },
-    "emery": {
-      "capturedAt": "2026-09-06T07:05:17.657282+00:00",
+    "chalk": {
+      "capturedAt": "2026-09-07T06:02:48.634508+00:00",
       "loggedRenderMS": {
-        "min": 12,
-        "max": 16
+        "min": 15,
+        "max": 43
       },
-      "minimumLoggedFreeHeapBytes": 111948,
+      "minimumLoggedFreeHeapBytes": 47164,
       "naturalNoonRollover": true,
       "naturalMidnightRollover": true,
       "cadenceFrames": {
         "idle": [
-          17,
-          18,
-          19
+          19,
+          20,
+          21
         ],
         "tap": [
-          23,
-          31,
-          39
+          24,
+          32,
+          40
         ],
         "settled": [
-          72,
-          73,
-          74
+          74,
+          75,
+          76
         ]
       }
     },
-    "flint": {
-      "capturedAt": "2026-09-06T07:05:59.462689+00:00",
+    "diorite": {
+      "capturedAt": "2026-09-07T06:03:34.589385+00:00",
       "loggedRenderMS": {
         "min": 0,
-        "max": 2
+        "max": 4
       },
-      "minimumLoggedFreeHeapBytes": 46476,
+      "minimumLoggedFreeHeapBytes": 47236,
+      "naturalNoonRollover": true,
+      "naturalMidnightRollover": true,
+      "cadenceFrames": {
+        "idle": [
+          21,
+          22,
+          23
+        ],
+        "tap": [
+          26,
+          34,
+          42
+        ],
+        "settled": [
+          76,
+          77,
+          78
+        ]
+      }
+    },
+    "emery": {
+      "capturedAt": "2026-09-07T06:04:18.577572+00:00",
+      "loggedRenderMS": {
+        "min": 11,
+        "max": 14
+      },
+      "minimumLoggedFreeHeapBytes": 112700,
       "naturalNoonRollover": true,
       "naturalMidnightRollover": true,
       "cadenceFrames": {
@@ -126,8 +99,8 @@
           19
         ],
         "tap": [
-          25,
-          33,
+          24,
+          32,
           40
         ],
         "settled": [
@@ -137,20 +110,20 @@
         ]
       }
     },
-    "gabbro": {
-      "capturedAt": "2026-09-06T07:06:41.552269+00:00",
+    "flint": {
+      "capturedAt": "2026-09-07T06:05:01.785611+00:00",
       "loggedRenderMS": {
-        "min": 12,
-        "max": 15
+        "min": 0,
+        "max": 2
       },
-      "minimumLoggedFreeHeapBytes": 111948,
+      "minimumLoggedFreeHeapBytes": 47236,
       "naturalNoonRollover": true,
       "naturalMidnightRollover": true,
       "cadenceFrames": {
         "idle": [
-          16,
-          17,
-          18
+          18,
+          19,
+          20
         ],
         "tap": [
           23,
@@ -158,9 +131,37 @@
           39
         ],
         "settled": [
-          71,
-          72,
-          73
+          73,
+          74,
+          75
+        ]
+      }
+    },
+    "gabbro": {
+      "capturedAt": "2026-09-07T06:05:46.315811+00:00",
+      "loggedRenderMS": {
+        "min": 10,
+        "max": 17
+      },
+      "minimumLoggedFreeHeapBytes": 112700,
+      "naturalNoonRollover": true,
+      "naturalMidnightRollover": true,
+      "cadenceFrames": {
+        "idle": [
+          18,
+          19,
+          20
+        ],
+        "tap": [
+          21,
+          22,
+          25,
+          33
+        ],
+        "settled": [
+          73,
+          74,
+          75
         ]
       }
     }

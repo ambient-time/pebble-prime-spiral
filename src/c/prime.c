@@ -19,7 +19,3 @@ uint8_t prime_intensity(const PrimeDot *dot,PrimeTime time){
   }
   return brightest;
 }
-void prime_readout(char output[6],int hour,int minute){
-  output[0]='0'+hour/10;output[1]='0'+hour%10;output[2]=':';
-  output[3]='0'+minute/10;output[4]='0'+minute%10;output[5]=0;
-}

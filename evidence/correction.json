@@ -1,0 +1,168 @@
+{
+  "version": "1.0.1",
+  "pbwSHA256": "f27fbb2bb3ecae949963a4e1b1db55610d2007450fffc993a2cd09789f5465c7",
+  "previousRelease": "prime-spiral-1.0.0.pbw",
+  "previousPBWSHA256": "dd975f8a1b464fc42580f915e1cd67524f2594542f45f7bf30926fdb90d8b82a",
+  "uuid": "3b314f24-6f15-4790-b841-d1767a0c8663",
+  "removedVisuals": [
+    "digital hour:minute center disc, disc fill, and outline"
+  ],
+  "resourcePayloads": {
+    "basalt": {
+      "identicalToPreviousRelease": true,
+      "sha256": "4637c36df88fcbd6f1f9c274fd08d361caace20316ba1f76da93251c32eab464"
+    },
+    "chalk": {
+      "identicalToPreviousRelease": true,
+      "sha256": "4637c36df88fcbd6f1f9c274fd08d361caace20316ba1f76da93251c32eab464"
+    },
+    "diorite": {
+      "identicalToPreviousRelease": true,
+      "sha256": "4637c36df88fcbd6f1f9c274fd08d361caace20316ba1f76da93251c32eab464"
+    },
+    "emery": {
+      "identicalToPreviousRelease": true,
+      "sha256": "4637c36df88fcbd6f1f9c274fd08d361caace20316ba1f76da93251c32eab464"
+    },
+    "flint": {
+      "identicalToPreviousRelease": true,
+      "sha256": "4637c36df88fcbd6f1f9c274fd08d361caace20316ba1f76da93251c32eab464"
+    },
+    "gabbro": {
+      "identicalToPreviousRelease": true,
+      "sha256": "4637c36df88fcbd6f1f9c274fd08d361caace20316ba1f76da93251c32eab464"
+    }
+  },
+  "pinnedReferences": {
+    "reference/owner-reference.png": "b3ec123ce77e7794aa0eda4fff2be01cb059b6d882d607ef791b11748ab50ab6",
+    "reference/provenance.json": "5bb5851c9b88778ea85d23df7d392ee534062263d2f7700ea4660f28bdbc6fb4",
+    "reference/source.html": "413566e39516b7dde0c98127da7934905b1ffd0996c1a64446e1240eccd02341"
+  },
+  "checkedAt": "2026-09-07T05:50:43.180078+00:00",
+  "scope": "Native resource payload comparison with the prior release. Host tests verify the retained time mappings. Current native captures and independent source rebuild are recorded separately.",
+  "nativeVisualReview": {
+    "frames": [
+      {
+        "file": "basalt-evening.png",
+        "sha256": "4e1b1e53cd4a36d13e1a9c17717f96b47e67190daa0c41e2e0bdc181b72c3d2e"
+      },
+      {
+        "file": "basalt-hero.png",
+        "sha256": "90911cac4b0aa6a14938e02c3f918ca6153100040086c648969330aa22e812d0"
+      },
+      {
+        "file": "basalt-midnight-rollover.png",
+        "sha256": "f2ee38ff8af91072b0210b63c84184ccaadeaa1b92f49c58dc1c3de5e37de653"
+      },
+      {
+        "file": "basalt-noon-rollover.png",
+        "sha256": "f2ee38ff8af91072b0210b63c84184ccaadeaa1b92f49c58dc1c3de5e37de653"
+      },
+      {
+        "file": "basalt-quarter.png",
+        "sha256": "2fee069c9d58eb16542582659d33e724545552d3295db07f26af148f9ded7988"
+      },
+      {
+        "file": "chalk-evening.png",
+        "sha256": "0e3c783cfd3ce474893f3e018e5c4647372a8cd2f02e2baf8f6a916f430bea7b"
+      },
+      {
+        "file": "chalk-hero.png",
+        "sha256": "2c24f2486b342b7f76e687ca358e910eb31984c44b5cb97f68f0c95eca9b54b8"
+      },
+      {
+        "file": "chalk-midnight-rollover.png",
+        "sha256": "5c1c13f7417698283d2b64d766946b0927d1fa1bbaa691d1850c39eb894b8f02"
+      },
+      {
+        "file": "chalk-noon-rollover.png",
+        "sha256": "5c1c13f7417698283d2b64d766946b0927d1fa1bbaa691d1850c39eb894b8f02"
+      },
+      {
+        "file": "chalk-quarter.png",
+        "sha256": "e477f2ab4dce4090f902d4f02a75e3542f35250e9ec8695960b72ce0712ac52b"
+      },
+      {
+        "file": "diorite-evening.png",
+        "sha256": "80273b0d6255b3ae10dadf7f4788ca71482c2b6bf989c9760aaed60446f7708d"
+      },
+      {
+        "file": "diorite-hero.png",
+        "sha256": "b1c48f66a5f36f1c0709898cfef51a01f1234b0e7313a38312532a5b496c3896"
+      },
+      {
+        "file": "diorite-midnight-rollover.png",
+        "sha256": "70c328e92b786ecf1fe403ee24f05575e9f2c0796f11790dee7cfa858cee679c"
+      },
+      {
+        "file": "diorite-noon-rollover.png",
+        "sha256": "70c328e92b786ecf1fe403ee24f05575e9f2c0796f11790dee7cfa858cee679c"
+      },
+      {
+        "file": "diorite-quarter.png",
+        "sha256": "4827ebfdc69ca0a88918ea404e0c5485c8be0137796db8f51d88ab34f921919b"
+      },
+      {
+        "file": "emery-evening.png",
+        "sha256": "39611371e122653899bc666d80c76f64ae74168b82dc7de2bda2d77fa1569296"
+      },
+      {
+        "file": "emery-hero.png",
+        "sha256": "ae4dedaec7b084e21fedfabe4c7b65a389c0ddc53c0bbd68fd5efdffc5c701f4"
+      },
+      {
+        "file": "emery-midnight-rollover.png",
+        "sha256": "7f45ee16013e67a034008fd6c8661dec4e4096aef5e5046edc07f499f9da995e"
+      },
+      {
+        "file": "emery-noon-rollover.png",
+        "sha256": "7f45ee16013e67a034008fd6c8661dec4e4096aef5e5046edc07f499f9da995e"
+      },
+      {
+        "file": "emery-quarter.png",
+        "sha256": "827e3d6592a41f0aa4faf31db6c075182e2a31239a921ea464962ecafde3addf"
+      },
+      {
+        "file": "flint-evening.png",
+        "sha256": "80273b0d6255b3ae10dadf7f4788ca71482c2b6bf989c9760aaed60446f7708d"
+      },
+      {
+        "file": "flint-hero.png",
+        "sha256": "b1c48f66a5f36f1c0709898cfef51a01f1234b0e7313a38312532a5b496c3896"
+      },
+      {
+        "file": "flint-midnight-rollover.png",
+        "sha256": "70c328e92b786ecf1fe403ee24f05575e9f2c0796f11790dee7cfa858cee679c"
+      },
+      {
+        "file": "flint-noon-rollover.png",
+        "sha256": "70c328e92b786ecf1fe403ee24f05575e9f2c0796f11790dee7cfa858cee679c"
+      },
+      {
+        "file": "flint-quarter.png",
+        "sha256": "4827ebfdc69ca0a88918ea404e0c5485c8be0137796db8f51d88ab34f921919b"
+      },
+      {
+        "file": "gabbro-evening.png",
+        "sha256": "51e8f5d430c4c8624ec943d34d49b3568bcf6084b2d9767520f4f4f8682d028b"
+      },
+      {
+        "file": "gabbro-hero.png",
+        "sha256": "2717a816fa7073bb108cf4238cc25b67128a09152d94a1262b8f5226c61113b3"
+      },
+      {
+        "file": "gabbro-midnight-rollover.png",
+        "sha256": "3cb695c544e89f5bb95f06f45a21487934e98084038624240dd3fcb0913a7991"
+      },
+      {
+        "file": "gabbro-noon-rollover.png",
+        "sha256": "3cb695c544e89f5bb95f06f45a21487934e98084038624240dd3fcb0913a7991"
+      },
+      {
+        "file": "gabbro-quarter.png",
+        "sha256": "d919f5e94e1411b714fa9fba5a76d430388472add6dc0d93a2fc1b9c20ac4739"
+      }
+    ],
+    "result": "The complete prime field and three time bearings remain visible across rectangular, round, color, and monochrome targets. No digital center disc remains."
+  }
+}

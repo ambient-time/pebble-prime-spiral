@@ -2,7 +2,7 @@
 
 Prime numbers form a sunflower of light. Three invisible bearings sweep through
 its points to mark the hour, minute, and second. Nearby primes brighten and
-grow as each bearing passes; a compact center disc gives the local 24-hour time.
+grow as each bearing passes.
 
 The arrangement contains every integer from 2 through 1800, including all 278 primes. The golden angle determines each point’s position. The hour reaches 58% of the field radius,
 the minute 80%, and the second the outer edge.
@@ -73,9 +73,9 @@ runtime trigonometry. Host tests compare the generated points with the source
 formula and bound brightness error below 0.008 on a 0–1 scale.
 
 Both screen shapes keep the circular field. Its radius is 43.5% of the shorter
-screen dimension. The center readout comes from the source's compact layout;
-small bitmap digits replace its browser font. On the 260-pixel display the
-digits double in size. A dark center disc keeps the time clear of the points.
+screen dimension. Version 1.0.1 removes the digital center disc at Luke’s
+request. The pinned source retains that readout; the watch now shows only
+the prime field and its three time bearings.
 
 Pebble's color displays use white and gray discs in place of blur and opacity.
 Monochrome displays keep white prime dots and use their size to show emphasis.

@@ -1,25 +1,25 @@
 {
   "platform": "flint",
-  "pbwSHA256": "dd975f8a1b464fc42580f915e1cd67524f2594542f45f7bf30926fdb90d8b82a",
-  "capturedAt": "2026-09-06T07:05:59.462689+00:00",
+  "pbwSHA256": "f27fbb2bb3ecae949963a4e1b1db55610d2007450fffc993a2cd09789f5465c7",
+  "capturedAt": "2026-09-07T06:05:01.785611+00:00",
   "secondsChanged": true,
   "naturalNoonRollover": true,
   "naturalMidnightRollover": true,
   "cadenceFrames": {
     "idle": [
-      17,
       18,
-      19
+      19,
+      20
     ],
     "tap": [
-      25,
-      33,
-      40
+      23,
+      31,
+      39
     ],
     "settled": [
-      72,
       73,
-      74
+      74,
+      75
     ]
   },
   "frames": [
@@ -35,36 +35,36 @@
     "evidence/flint-cadence.png"
   ],
   "logs": [
-    "Prime time=07:05:30.709 active=18 ms=2 heap=46476 frames=1",
-    "Prime time=07:05:31.109 active=15 ms=1 heap=46556 frames=3",
-    "Prime time=07:05:32.108 active=19 ms=1 heap=46556 frames=4",
-    "Prime time=23:21:17.107 active=15 ms=1 heap=46556 frames=5",
-    "Prime time=23:21:18.108 active=13 ms=1 heap=46556 frames=6",
-    "Prime time=23:21:19.109 active=13 ms=1 heap=46556 frames=7",
-    "Prime time=12:00:01.108 active=11 ms=1 heap=46556 frames=8",
-    "Prime time=03:15:46.109 active=13 ms=1 heap=46556 frames=9",
-    "Prime time=18:30:31.108 active=11 ms=0 heap=46556 frames=10",
-    "Prime time=11:59:59.108 active=10 ms=1 heap=46556 frames=11",
-    "Prime time=12:00:00.108 active=12 ms=1 heap=46556 frames=12",
-    "Prime time=23:59:59.108 active=10 ms=1 heap=46556 frames=13",
-    "Prime time=00:00:00.109 active=12 ms=1 heap=46556 frames=14",
-    "Prime time=11:24:31.108 active=13 ms=1 heap=46556 frames=15",
-    "Prime time=11:24:32.109 active=16 ms=0 heap=46556 frames=16",
-    "Prime time=11:24:33.108 active=13 ms=1 heap=46556 frames=17",
-    "Prime time=11:24:34.108 active=15 ms=1 heap=46556 frames=18",
-    "Prime time=11:24:35.108 active=16 ms=1 heap=46556 frames=19",
-    "Prime time=11:24:36.073 active=16 ms=1 heap=46556 frames=25",
-    "Prime time=11:24:37.098 active=11 ms=1 heap=46556 frames=33",
-    "Prime time=11:24:38.994 active=17 ms=1 heap=46556 frames=40",
-    "Prime time=11:24:39.015 active=17 ms=1 heap=46556 frames=48",
-    "Prime time=11:24:40.032 active=16 ms=1 heap=46556 frames=56",
-    "Prime time=11:24:41.055 active=17 ms=0 heap=46556 frames=64",
-    "Prime time=11:24:42.108 active=15 ms=1 heap=46556 frames=69",
-    "Prime time=11:24:43.108 active=15 ms=1 heap=46556 frames=70",
-    "Prime time=11:24:44.108 active=14 ms=1 heap=46556 frames=71",
-    "Prime time=11:24:45.108 active=15 ms=1 heap=46556 frames=72",
-    "Prime time=11:24:46.108 active=15 ms=1 heap=46556 frames=73",
-    "Prime time=11:24:47.108 active=15 ms=1 heap=46556 frames=74"
+    "Prime time=06:04:32.925 active=16 ms=2 heap=47236 frames=1",
+    "Prime time=06:04:33.134 active=13 ms=1 heap=47316 frames=4",
+    "Prime time=23:21:17.133 active=15 ms=1 heap=47316 frames=5",
+    "Prime time=23:21:18.134 active=13 ms=1 heap=47316 frames=6",
+    "Prime time=23:21:19.134 active=13 ms=1 heap=47316 frames=7",
+    "Prime time=12:00:00.134 active=12 ms=1 heap=47316 frames=8",
+    "Prime time=03:15:45.134 active=13 ms=0 heap=47316 frames=9",
+    "Prime time=18:30:30.133 active=14 ms=1 heap=47316 frames=10",
+    "Prime time=11:59:58.134 active=13 ms=1 heap=47316 frames=11",
+    "Prime time=11:59:59.134 active=10 ms=1 heap=47316 frames=12",
+    "Prime time=12:00:00.133 active=12 ms=1 heap=47316 frames=13",
+    "Prime time=23:59:59.134 active=10 ms=1 heap=47316 frames=14",
+    "Prime time=00:00:00.134 active=12 ms=1 heap=47316 frames=15",
+    "Prime time=11:24:31.133 active=13 ms=1 heap=47316 frames=16",
+    "Prime time=11:24:32.134 active=16 ms=1 heap=47316 frames=17",
+    "Prime time=11:24:33.133 active=13 ms=1 heap=47316 frames=18",
+    "Prime time=11:24:34.134 active=15 ms=1 heap=47316 frames=19",
+    "Prime time=11:24:35.133 active=16 ms=1 heap=47316 frames=20",
+    "Prime time=11:24:36.736 active=13 ms=1 heap=47316 frames=23",
+    "Prime time=11:24:37.758 active=15 ms=1 heap=47316 frames=31",
+    "Prime time=11:24:38.775 active=17 ms=1 heap=47316 frames=39",
+    "Prime time=11:24:39.795 active=15 ms=1 heap=47316 frames=47",
+    "Prime time=11:24:40.812 active=17 ms=1 heap=47316 frames=55",
+    "Prime time=11:24:41.832 active=15 ms=1 heap=47316 frames=63",
+    "Prime time=11:24:42.134 active=15 ms=1 heap=47316 frames=70",
+    "Prime time=11:24:43.134 active=15 ms=0 heap=47316 frames=71",
+    "Prime time=11:24:44.134 active=14 ms=0 heap=47316 frames=72",
+    "Prime time=11:24:45.134 active=15 ms=1 heap=47316 frames=73",
+    "Prime time=11:24:46.134 active=15 ms=1 heap=47316 frames=74",
+    "Prime time=11:24:47.134 active=15 ms=0 heap=47316 frames=75"
   ],
   "limits": "Isolated emulator. Frames require visual inspection; not physical-device power/readability evidence."
 }
