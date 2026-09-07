@@ -5,16 +5,16 @@ The production PBW passed installation and native checks on all six targets.
 Each target report includes the native logs and capture paths.
 
 I inspected the hero, quarter-hour, evening, noon-rollover, and midnight-rollover
-captures on every target. The field stays circular and the center time remains
-clear. White and gray discs separate the bright bearings from steady primes on
-color screens. Monochrome screens use dot size for emphasis. The 260-pixel
-version uses larger center digits. Noon and midnight align all three bearings
-at the top of the field and show the correct 24-hour readout.
+captures on every target. The field stays circular. White and gray dots
+separate the bright bearings from steady primes on color screens. Monochrome
+screens use dot size for emphasis. Noon and midnight align all three bearings
+at the top of the field. Version 1.0.1 removes the digital center disc;
+`correction.json` records the current visual review.
 
 The host suite checks every integer from 2 through 1800 against an independent
 sieve, all 1799 golden-angle coordinates, and all three radial limits. Brightness
 fixtures differ from the source Gaussian by at most 0.00339 on a 0–1 scale.
-Readout tests cover every second in a day and fractional noon and midnight.
+Time-bearing tests cover every second in a day and fractional noon and midnight.
 Address and undefined-behavior sanitizers pass.
 
 Native checks confirm changing seconds, natural noon and midnight rollovers,

@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.1",
+  "changedMembers": [
+    "evidence/README.md"
+  ],
+  "changedMemberSHA256": {
+    "before": "b41a064fae93d1a7865c75bf13706344a0f886b9507d4473d721bd6fc45eeab1",
+    "after": "a064ee234642f7b09ec7d928aa276215a05f7ebf26a2c4850928ec7208519a37"
+  },
+  "previousSourceZip": "prime-spiral-1.0.1-source-before-doc-refresh.zip",
+  "previousSourceZipSHA256": "5a5258aee29abb098c0d02f0f6bb10283134155d8779d4e2f9a714c8111fbb09",
+  "sourceZip": "prime-spiral-1.0.1-source.zip",
+  "sourceZipSHA256": "c53c0e32d8b3f6470790d4b0bed5d4f96ca9086271e773579211e8a4ea89754e",
+  "pbwSHA256": "f27fbb2bb3ecae949963a4e1b1db55610d2007450fffc993a2cd09789f5465c7",
+  "allOtherMembersByteIdentical": true,
+  "unchangedMemberCount": 91,
+  "unchangedMembersSHA256": "8e0d743274657232797f7091e617332426651b87eecea43edab39e0c47997a83",
+  "scope": "Only evidence/README.md changed inside the portable source ZIP. Production PBWs, native captures, source code, resources, tests, metadata, and pinned references remain byte-identical.",
+  "independentSourceBuild": {
+    "proof": "../evidence/independent-build.json",
+    "proofSHA256": "3e456bd7e503e7053d3d60015e8a63029c915a158341dea5375bb0f24451fbeb",
+    "hostTestsPassed": true,
+    "sixTargetBuildPassed": true
+  }
+}
