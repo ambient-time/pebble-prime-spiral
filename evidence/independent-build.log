@@ -2,26 +2,26 @@ mkdir -p build
 clang -std=c11 -fsanitize=address,undefined -Wall -Wextra -Werror test/time.c src/c/prime.c -lm -o build/time-test
 ./build/time-test
 PASS: 278 exact primes through 1800, 1799 golden-angle points, depth limits, Gaussian maximum error 0.00339, 86400 local-second bearings, noon and midnight.
-/Users/luke/.local/bin/pebble build --sdk 4.33.1
+~/.local/bin/pebble build --sdk 4.33.1
 Setting top to                           : /private/var/folders/kl/6kmp_kld6hx_70h5kqwb97k00000gn/T/prime-spiral-independent-ussa9jz6/prime-spiral 
 Setting out to                           : /private/var/folders/kl/6kmp_kld6hx_70h5kqwb97k00000gn/T/prime-spiral-independent-ussa9jz6/prime-spiral/build 
-Checking for program 'webpack'           : /Users/luke/Library/Application Support/Pebble SDK/SDKs/4.33.1/node_modules/.bin/webpack 
-Found Pebble SDK for gabbro in:          : /Users/luke/Library/Application Support/Pebble SDK/SDKs/4.33.1/sdk-core/pebble/gabbro 
+Checking for program 'webpack'           : ~/Library/Application Support/Pebble SDK/SDKs/4.33.1/node_modules/.bin/webpack 
+Found Pebble SDK for gabbro in:          : ~/Library/Application Support/Pebble SDK/SDKs/4.33.1/sdk-core/pebble/gabbro 
 Checking for program 'gcc, cc'           : arm-none-eabi-gcc 
 Checking for program 'ar'                : arm-none-eabi-ar 
-Found Pebble SDK for flint in:           : /Users/luke/Library/Application Support/Pebble SDK/SDKs/4.33.1/sdk-core/pebble/flint 
+Found Pebble SDK for flint in:           : ~/Library/Application Support/Pebble SDK/SDKs/4.33.1/sdk-core/pebble/flint 
 Checking for program 'gcc, cc'           : arm-none-eabi-gcc 
 Checking for program 'ar'                : arm-none-eabi-ar 
-Found Pebble SDK for emery in:           : /Users/luke/Library/Application Support/Pebble SDK/SDKs/4.33.1/sdk-core/pebble/emery 
+Found Pebble SDK for emery in:           : ~/Library/Application Support/Pebble SDK/SDKs/4.33.1/sdk-core/pebble/emery 
 Checking for program 'gcc, cc'           : arm-none-eabi-gcc 
 Checking for program 'ar'                : arm-none-eabi-ar 
-Found Pebble SDK for diorite in:         : /Users/luke/Library/Application Support/Pebble SDK/SDKs/4.33.1/sdk-core/pebble/diorite 
+Found Pebble SDK for diorite in:         : ~/Library/Application Support/Pebble SDK/SDKs/4.33.1/sdk-core/pebble/diorite 
 Checking for program 'gcc, cc'           : arm-none-eabi-gcc 
 Checking for program 'ar'                : arm-none-eabi-ar 
-Found Pebble SDK for chalk in:           : /Users/luke/Library/Application Support/Pebble SDK/SDKs/4.33.1/sdk-core/pebble/chalk 
+Found Pebble SDK for chalk in:           : ~/Library/Application Support/Pebble SDK/SDKs/4.33.1/sdk-core/pebble/chalk 
 Checking for program 'gcc, cc'           : arm-none-eabi-gcc 
 Checking for program 'ar'                : arm-none-eabi-ar 
-Found Pebble SDK for basalt in:          : /Users/luke/Library/Application Support/Pebble SDK/SDKs/4.33.1/sdk-core/pebble/basalt 
+Found Pebble SDK for basalt in:          : ~/Library/Application Support/Pebble SDK/SDKs/4.33.1/sdk-core/pebble/basalt 
 Checking for program 'gcc, cc'           : arm-none-eabi-gcc 
 Checking for program 'ar'                : arm-none-eabi-ar 
 'configure' finished successfully (0.175s)
@@ -29,7 +29,7 @@ Waf: Entering directory `/private/var/folders/kl/6kmp_kld6hx_70h5kqwb97k00000gn/
 [1/1] Creating message_key_header:  -> build/include/message_keys.auto.h
 [ 2/15] Compiling gabbro | reso: resources/menu-icon.png -> build/gabbro/resources/menu-icon.png.MENU_ICON.reso
 [ 3/15] Creating gabbro | /private/var/folders/kl/6kmp_kld6hx_70h5kqwb97k00000gn/T/prime-spiral-independent-ussa9jz6/prime-spiral/build/gabbro/appinfo.auto.c:  -> build/gabbro/appinfo.auto.c
-[ 4/15] Compiling gabbro | subst: /Users/luke/Library/Application Support/Pebble SDK/SDKs/4.33.1/sdk-core/pebble/common/pebble_app.ld.template -> build/gabbro/pebble_app.ld.auto
+[ 4/15] Compiling gabbro | subst: ~/Library/Application Support/Pebble SDK/SDKs/4.33.1/sdk-core/pebble/common/pebble_app.ld.template -> build/gabbro/pebble_app.ld.auto
 [ 5/15] Compiling gabbro | c: src/c/prime.c -> build/src/c/prime.c.44.o
 [ 6/15] Creating gabbro | /private/var/folders/kl/6kmp_kld6hx_70h5kqwb97k00000gn/T/prime-spiral-independent-ussa9jz6/prime-spiral/build/appinfo.json:  -> build/appinfo.json
 [ 7/15] Compiling gabbro | resource_ball: build/gabbro/resources/menu-icon.png.MENU_ICON.reso -> build/gabbro/system_resources.resball
@@ -40,7 +40,7 @@ Waf: Entering directory `/private/var/folders/kl/6kmp_kld6hx_70h5kqwb97k00000gn/
 [12/15] Compiling gabbro | c: src/c/main.c -> build/src/c/main.c.44.o
 [13/15] Compiling gabbro | c: build/gabbro/appinfo.auto.c -> build/gabbro/appinfo.auto.c.44.o
 [14/15] Linking gabbro | cprogram: build/src/c/main.c.44.o build/src/c/prime.c.44.o build/gabbro/appinfo.auto.c.44.o build/gabbro/src/resource_ids.auto.c.44.o -> build/gabbro/pebble-app.elf
-/Users/luke/Library/Application Support/Pebble SDK/SDKs/4.33.1/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: warning: /private/var/folders/kl/6kmp_kld6hx_70h5kqwb97k00000gn/T/prime-spiral-independent-ussa9jz6/prime-spiral/build/gabbro/pebble-app.elf has a LOAD segment with RWX permissions
+~/Library/Application Support/Pebble SDK/SDKs/4.33.1/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: warning: /private/var/folders/kl/6kmp_kld6hx_70h5kqwb97k00000gn/T/prime-spiral-independent-ussa9jz6/prime-spiral/build/gabbro/pebble-app.elf has a LOAD segment with RWX permissions
 
 [15/15] Processing gabbro | memory_usage_report: build/gabbro/pebble-app.elf build/gabbro/app_resources.pbpack
 -------------------------------------------------------
@@ -51,7 +51,7 @@ Free RAM available (heap):      113013 bytes
 ------------------------------------------------------- 
 [16/29] Compiling flint | reso: resources/menu-icon.png -> build/flint/resources/menu-icon.png.MENU_ICON.reso
 [17/29] Creating flint | /private/var/folders/kl/6kmp_kld6hx_70h5kqwb97k00000gn/T/prime-spiral-independent-ussa9jz6/prime-spiral/build/flint/appinfo.auto.c:  -> build/flint/appinfo.auto.c
-[18/29] Compiling flint | subst: /Users/luke/Library/Application Support/Pebble SDK/SDKs/4.33.1/sdk-core/pebble/common/pebble_app.ld.template -> build/flint/pebble_app.ld.auto
+[18/29] Compiling flint | subst: ~/Library/Application Support/Pebble SDK/SDKs/4.33.1/sdk-core/pebble/common/pebble_app.ld.template -> build/flint/pebble_app.ld.auto
 [19/29] Compiling flint | c: src/c/prime.c -> build/src/c/prime.c.45.o
 [21/29] Compiling flint | resource_ball: build/flint/resources/menu-icon.png.MENU_ICON.reso -> build/flint/system_resources.resball
 [22/29] Compiling flint | generate_resource_id_definitions: build/flint/system_resources.resball -> build/flint/src/resource_ids.auto.c
@@ -61,7 +61,7 @@ Free RAM available (heap):      113013 bytes
 [26/29] Compiling flint | c: src/c/main.c -> build/src/c/main.c.45.o
 [27/29] Compiling flint | c: build/flint/appinfo.auto.c -> build/flint/appinfo.auto.c.45.o
 [28/29] Linking flint | cprogram: build/src/c/main.c.45.o build/src/c/prime.c.45.o build/flint/appinfo.auto.c.45.o build/flint/src/resource_ids.auto.c.45.o -> build/flint/pebble-app.elf
-/Users/luke/Library/Application Support/Pebble SDK/SDKs/4.33.1/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: warning: /private/var/folders/kl/6kmp_kld6hx_70h5kqwb97k00000gn/T/prime-spiral-independent-ussa9jz6/prime-spiral/build/flint/pebble-app.elf has a LOAD segment with RWX permissions
+~/Library/Application Support/Pebble SDK/SDKs/4.33.1/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: warning: /private/var/folders/kl/6kmp_kld6hx_70h5kqwb97k00000gn/T/prime-spiral-independent-ussa9jz6/prime-spiral/build/flint/pebble-app.elf has a LOAD segment with RWX permissions
 
 [29/29] Processing flint | memory_usage_report: build/flint/pebble-app.elf build/flint/app_resources.pbpack
 -------------------------------------------------------
@@ -72,7 +72,7 @@ Free RAM available (heap):      47549 bytes
 ------------------------------------------------------- 
 [30/43] Compiling emery | reso: resources/menu-icon.png -> build/emery/resources/menu-icon.png.MENU_ICON.reso
 [31/43] Creating emery | /private/var/folders/kl/6kmp_kld6hx_70h5kqwb97k00000gn/T/prime-spiral-independent-ussa9jz6/prime-spiral/build/emery/appinfo.auto.c:  -> build/emery/appinfo.auto.c
-[32/43] Compiling emery | subst: /Users/luke/Library/Application Support/Pebble SDK/SDKs/4.33.1/sdk-core/pebble/common/pebble_app.ld.template -> build/emery/pebble_app.ld.auto
+[32/43] Compiling emery | subst: ~/Library/Application Support/Pebble SDK/SDKs/4.33.1/sdk-core/pebble/common/pebble_app.ld.template -> build/emery/pebble_app.ld.auto
 [33/43] Compiling emery | c: src/c/prime.c -> build/src/c/prime.c.46.o
 [35/43] Compiling emery | resource_ball: build/emery/resources/menu-icon.png.MENU_ICON.reso -> build/emery/system_resources.resball
 [36/43] Compiling emery | generate_resource_id_definitions: build/emery/system_resources.resball -> build/emery/src/resource_ids.auto.c
@@ -82,7 +82,7 @@ Free RAM available (heap):      47549 bytes
 [40/43] Compiling emery | c: src/c/main.c -> build/src/c/main.c.46.o
 [41/43] Compiling emery | c: build/emery/appinfo.auto.c -> build/emery/appinfo.auto.c.46.o
 [42/43] Linking emery | cprogram: build/src/c/main.c.46.o build/src/c/prime.c.46.o build/emery/appinfo.auto.c.46.o build/emery/src/resource_ids.auto.c.46.o -> build/emery/pebble-app.elf
-/Users/luke/Library/Application Support/Pebble SDK/SDKs/4.33.1/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: warning: /private/var/folders/kl/6kmp_kld6hx_70h5kqwb97k00000gn/T/prime-spiral-independent-ussa9jz6/prime-spiral/build/emery/pebble-app.elf has a LOAD segment with RWX permissions
+~/Library/Application Support/Pebble SDK/SDKs/4.33.1/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: warning: /private/var/folders/kl/6kmp_kld6hx_70h5kqwb97k00000gn/T/prime-spiral-independent-ussa9jz6/prime-spiral/build/emery/pebble-app.elf has a LOAD segment with RWX permissions
 
 [43/43] Processing emery | memory_usage_report: build/emery/pebble-app.elf build/emery/app_resources.pbpack
 -------------------------------------------------------
@@ -93,7 +93,7 @@ Free RAM available (heap):      113013 bytes
 ------------------------------------------------------- 
 [44/57] Compiling diorite | reso: resources/menu-icon.png -> build/diorite/resources/menu-icon.png.MENU_ICON.reso
 [45/57] Creating diorite | /private/var/folders/kl/6kmp_kld6hx_70h5kqwb97k00000gn/T/prime-spiral-independent-ussa9jz6/prime-spiral/build/diorite/appinfo.auto.c:  -> build/diorite/appinfo.auto.c
-[46/57] Compiling diorite | subst: /Users/luke/Library/Application Support/Pebble SDK/SDKs/4.33.1/sdk-core/pebble/common/pebble_app.ld.template -> build/diorite/pebble_app.ld.auto
+[46/57] Compiling diorite | subst: ~/Library/Application Support/Pebble SDK/SDKs/4.33.1/sdk-core/pebble/common/pebble_app.ld.template -> build/diorite/pebble_app.ld.auto
 [47/57] Compiling diorite | c: src/c/prime.c -> build/src/c/prime.c.47.o
 [49/57] Compiling diorite | resource_ball: build/diorite/resources/menu-icon.png.MENU_ICON.reso -> build/diorite/system_resources.resball
 [50/57] Compiling diorite | generate_resource_id_definitions: build/diorite/system_resources.resball -> build/diorite/src/resource_ids.auto.c
@@ -103,7 +103,7 @@ Free RAM available (heap):      113013 bytes
 [54/57] Compiling diorite | c: src/c/main.c -> build/src/c/main.c.47.o
 [55/57] Compiling diorite | c: build/diorite/appinfo.auto.c -> build/diorite/appinfo.auto.c.47.o
 [56/57] Linking diorite | cprogram: build/src/c/main.c.47.o build/src/c/prime.c.47.o build/diorite/appinfo.auto.c.47.o build/diorite/src/resource_ids.auto.c.47.o -> build/diorite/pebble-app.elf
-/Users/luke/Library/Application Support/Pebble SDK/SDKs/4.33.1/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: warning: /private/var/folders/kl/6kmp_kld6hx_70h5kqwb97k00000gn/T/prime-spiral-independent-ussa9jz6/prime-spiral/build/diorite/pebble-app.elf has a LOAD segment with RWX permissions
+~/Library/Application Support/Pebble SDK/SDKs/4.33.1/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: warning: /private/var/folders/kl/6kmp_kld6hx_70h5kqwb97k00000gn/T/prime-spiral-independent-ussa9jz6/prime-spiral/build/diorite/pebble-app.elf has a LOAD segment with RWX permissions
 
 [57/57] Processing diorite | memory_usage_report: build/diorite/pebble-app.elf build/diorite/app_resources.pbpack
 -------------------------------------------------------
@@ -114,7 +114,7 @@ Free RAM available (heap):      47549 bytes
 ------------------------------------------------------- 
 [58/71] Compiling chalk | reso: resources/menu-icon.png -> build/chalk/resources/menu-icon.png.MENU_ICON.reso
 [59/71] Creating chalk | /private/var/folders/kl/6kmp_kld6hx_70h5kqwb97k00000gn/T/prime-spiral-independent-ussa9jz6/prime-spiral/build/chalk/appinfo.auto.c:  -> build/chalk/appinfo.auto.c
-[60/71] Compiling chalk | subst: /Users/luke/Library/Application Support/Pebble SDK/SDKs/4.33.1/sdk-core/pebble/common/pebble_app.ld.template -> build/chalk/pebble_app.ld.auto
+[60/71] Compiling chalk | subst: ~/Library/Application Support/Pebble SDK/SDKs/4.33.1/sdk-core/pebble/common/pebble_app.ld.template -> build/chalk/pebble_app.ld.auto
 [61/71] Compiling chalk | c: src/c/prime.c -> build/src/c/prime.c.48.o
 [63/71] Compiling chalk | resource_ball: build/chalk/resources/menu-icon.png.MENU_ICON.reso -> build/chalk/system_resources.resball
 [64/71] Compiling chalk | generate_resource_id_definitions: build/chalk/system_resources.resball -> build/chalk/src/resource_ids.auto.c
@@ -124,7 +124,7 @@ Free RAM available (heap):      47549 bytes
 [68/71] Compiling chalk | c: src/c/main.c -> build/src/c/main.c.48.o
 [69/71] Compiling chalk | c: build/chalk/appinfo.auto.c -> build/chalk/appinfo.auto.c.48.o
 [70/71] Linking chalk | cprogram: build/src/c/main.c.48.o build/src/c/prime.c.48.o build/chalk/appinfo.auto.c.48.o build/chalk/src/resource_ids.auto.c.48.o -> build/chalk/pebble-app.elf
-/Users/luke/Library/Application Support/Pebble SDK/SDKs/4.33.1/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: warning: /private/var/folders/kl/6kmp_kld6hx_70h5kqwb97k00000gn/T/prime-spiral-independent-ussa9jz6/prime-spiral/build/chalk/pebble-app.elf has a LOAD segment with RWX permissions
+~/Library/Application Support/Pebble SDK/SDKs/4.33.1/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: warning: /private/var/folders/kl/6kmp_kld6hx_70h5kqwb97k00000gn/T/prime-spiral-independent-ussa9jz6/prime-spiral/build/chalk/pebble-app.elf has a LOAD segment with RWX permissions
 
 [71/71] Processing chalk | memory_usage_report: build/chalk/pebble-app.elf build/chalk/app_resources.pbpack
 -------------------------------------------------------
@@ -135,7 +135,7 @@ Free RAM available (heap):      47477 bytes
 ------------------------------------------------------- 
 [72/85] Compiling basalt | reso: resources/menu-icon.png -> build/basalt/resources/menu-icon.png.MENU_ICON.reso
 [73/85] Creating basalt | /private/var/folders/kl/6kmp_kld6hx_70h5kqwb97k00000gn/T/prime-spiral-independent-ussa9jz6/prime-spiral/build/basalt/appinfo.auto.c:  -> build/basalt/appinfo.auto.c
-[74/85] Compiling basalt | subst: /Users/luke/Library/Application Support/Pebble SDK/SDKs/4.33.1/sdk-core/pebble/common/pebble_app.ld.template -> build/basalt/pebble_app.ld.auto
+[74/85] Compiling basalt | subst: ~/Library/Application Support/Pebble SDK/SDKs/4.33.1/sdk-core/pebble/common/pebble_app.ld.template -> build/basalt/pebble_app.ld.auto
 [75/85] Compiling basalt | c: src/c/prime.c -> build/src/c/prime.c.49.o
 [77/85] Compiling basalt | resource_ball: build/basalt/resources/menu-icon.png.MENU_ICON.reso -> build/basalt/system_resources.resball
 [78/85] Compiling basalt | generate_resource_id_definitions: build/basalt/system_resources.resball -> build/basalt/src/resource_ids.auto.c
@@ -145,7 +145,7 @@ Free RAM available (heap):      47477 bytes
 [82/85] Compiling basalt | c: src/c/main.c -> build/src/c/main.c.49.o
 [83/85] Compiling basalt | c: build/basalt/appinfo.auto.c -> build/basalt/appinfo.auto.c.49.o
 [84/85] Linking basalt | cprogram: build/src/c/main.c.49.o build/src/c/prime.c.49.o build/basalt/appinfo.auto.c.49.o build/basalt/src/resource_ids.auto.c.49.o -> build/basalt/pebble-app.elf
-/Users/luke/Library/Application Support/Pebble SDK/SDKs/4.33.1/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: warning: /private/var/folders/kl/6kmp_kld6hx_70h5kqwb97k00000gn/T/prime-spiral-independent-ussa9jz6/prime-spiral/build/basalt/pebble-app.elf has a LOAD segment with RWX permissions
+~/Library/Application Support/Pebble SDK/SDKs/4.33.1/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: warning: /private/var/folders/kl/6kmp_kld6hx_70h5kqwb97k00000gn/T/prime-spiral-independent-ussa9jz6/prime-spiral/build/basalt/pebble-app.elf has a LOAD segment with RWX permissions
 
 [85/85] Processing basalt | memory_usage_report: build/basalt/pebble-app.elf build/basalt/app_resources.pbpack
 -------------------------------------------------------
